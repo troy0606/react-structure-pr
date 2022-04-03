@@ -14,9 +14,9 @@ const mapDispatchToProps = {
   getApiAllUserData,
 }
 
-function Index() {
+function Index(props) {
   useEffect(() => {
-    //Runs only on the first render
+    props.getApiAllUserData();
   }, []);
   return (
     <div>index</div>

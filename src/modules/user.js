@@ -24,7 +24,9 @@ export function loadData() {
 export const getApiAllUserData = () => {
   return async (dispatch, getState) => {
     const response = await agent.Users.getAll();
-    dispatch(getAllUserData(response));
+    if(response.status === 200) {
+      dispatch(getAllUserData(response.data));
+    }
   };
 };
 

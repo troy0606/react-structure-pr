@@ -98,7 +98,7 @@ const tokenPlugin = req => {
 
 
 const Users = {
-  getAll: axiosBasicInstance.get('/users'),
+  getAll: () => axiosBasicInstance.get('/users'),
 }
 
 
