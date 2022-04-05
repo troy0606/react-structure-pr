@@ -8,13 +8,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter history={history}>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")
