@@ -13,7 +13,7 @@ jobs:
       MY_SECRET   : ${{secrets.commit_secrete}}
       USER_NAME   : troy0606
       USER_EMAIL  : troy0606troy0606@gmail.com
-      PUBLISH_DIR : ./dist
+      PUBLISH_DIR : ./build
       GITHUB_REPOSITORY: troy0606/react-structure-pr
     runs-on: ubuntu-latest
     strategy:
@@ -38,7 +38,6 @@ jobs:
         git init
         git config --local user.name $USER_NAME
         git config --local user.email $USER_EMAIL
-        echo 🤘 screte $MY_SECRET
         git status
         git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
         git checkout -b gh-pages
