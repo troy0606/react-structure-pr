@@ -31,7 +31,7 @@ jobs:
       run: npm ci
     - name: check .env file
       run: cat .env
-    - name: npm run build
+    - name: CI=false npm run build
       run: |
         npm run build
     - name: Commit files
