@@ -14,6 +14,7 @@ jobs:
       USER_NAME   : troy0606
       USER_EMAIL  : troy0606troy0606@gmail.com
       PUBLISH_DIR : ./dist
+      GITHUB_REPOSITORY: troy0606/react-structure-pr
     runs-on: ubuntu-latest
     strategy:
       matrix:
