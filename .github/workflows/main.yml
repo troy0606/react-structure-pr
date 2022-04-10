@@ -28,7 +28,9 @@ jobs:
       run: |
         npm install
     - name: Init rep 
-      run: npm i
+      run: npm ci
+    - name: check .env file
+      run: cat .env
     - name: npm run build
       run: |
         npm run build
