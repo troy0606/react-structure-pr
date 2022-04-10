@@ -38,7 +38,7 @@ jobs:
         git init
         git config --local user.name $USER_NAME
         git config --local user.email $USER_EMAIL
-        echo 🤘 screte $MY_SECRET
+        echo 🤘 screte $USER_EMAIL
         git status
         git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
         git checkout -b gh-pages
