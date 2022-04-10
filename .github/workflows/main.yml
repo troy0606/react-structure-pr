@@ -31,9 +31,9 @@ jobs:
       run: npm ci
     - name: check .env file
       run: cat .env
-    - name: CI=false npm run build
+    - name: npm run build
       run: |
-        npm run build
+        CI=false npm run build
     - name: Commit files
       run: |
         cd $PUBLISH_DIR
