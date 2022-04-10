@@ -28,7 +28,7 @@ jobs:
       run: |
         npm install
     - name: Init rep 
-      run: npm ci
+      run: npm i
     - name: npm run build
       run: |
         npm run build
