@@ -28,7 +28,7 @@ function User(props) {
           ? null
           : props.users.map((user, index) => {
               return (
-                <li key={user.id} className="test">
+                <li key={user.id}>
                   <p>{user.username}</p>
                   <p>{user.age}</p>
                   <p>{user.favourite_music_genre}</p>
