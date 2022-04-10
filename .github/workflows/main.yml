@@ -10,7 +10,7 @@ jobs:
   build:
     name: Build and deploy gh-pages
     env:
-      MY_SECRET   : ${{secrets.commit_secret}}
+      MY_SECRET   : ${{secrets.commit_secrete}}
       USER_NAME   : troy0606
       USER_EMAIL  : troy0606troy0606@gmail.com
       PUBLISH_DIR : ./dist
@@ -38,7 +38,7 @@ jobs:
         git init
         git config --local user.name $USER_NAME
         git config --local user.email $USER_EMAIL
-        echo 🤘 screte $USER_EMAIL
+        echo 🤘 screte $MY_SECRET
         git status
         git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
         git checkout -b gh-pages
